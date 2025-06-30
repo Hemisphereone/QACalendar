@@ -1,0 +1,178 @@
+// Import all of Bootstrap's CSS
+@import "~bootstrap/scss/bootstrap";
+:root {
+    --bs-popover-max-width: 500px;
+    --bs-popover-bg: #f7f7f7;
+    --fuchsia: 255, 165, 0;
+    --color-gold: 246, 191, 38;
+    --color-lightcoral: 240, 128, 128;
+    --color-cornflowerblue: 100, 149, 237;
+    --color-orange: 255, 165, 0;
+    --color-green: 60, 179, 113;
+    --color-purple: 218, 112, 214;
+    --color-gray: 112, 128, 143;
+    //--ec-event-bg-color: #f08080;
+}
+.ec {
+    /* Events */
+    --ec-event-bg-color: cornflowerblue;
+    --ec-event-text-color: #fff;
+    --ec-bg-event-color: cornflowerblue;
+    --ec-bg-event-opacity: 0.3;
+}
+$popover-body-color: #dfdfdf;
+
+.ec-time-grid .ec-time, .ec-time-grid .ec-line {
+    height: 80px;  /* override this value */
+}
+
+.popover {
+    --bs-popover-max-width: 500px;
+    --bs-popover-bg: #f7f7f7;
+    width: 500px; 
+    #element-close{
+        position: absolute;
+        right: 16px;
+    }
+}
+.popover-arrow {
+
+}
+.popover {
+    .row {
+        width: 100%;
+    }
+}
+.ec-event {
+    &.event-preview {
+        opacity: 0.8;
+        //background-color: rgba( inherit, 0.69);
+    }
+    .ec-event-body {
+        padding: 8px;
+    }
+}
+input[type=radio].eventColourPicker {
+    width: 1.5em;
+    height: 1.5em;
+}
+input[type=radio]:checked.eventColourPicker {
+    width: 1.5em;
+    height: 1.5em;
+    border: none;
+    
+}
+
+input[type=radio].cornflowerblue {   
+    background-color: rgb( var(--color-cornflowerblue) );
+}
+input[type=radio]:checked.cornflowerblue, input[type=radio]:focus.cornflowerblue  {
+    box-shadow: rgba( var(--color-cornflowerblue) ,1) 0px 0px 0px 0.25rem;
+    border-color: rgba( var(--color-cornflowerblue) ,1);
+}
+
+input[type=radio].gold {   
+    background-color: rgb( var(--color-gold) );
+}
+input[type=radio]:checked.gold, input[type=radio]:focus.gold  {
+    box-shadow: rgba( var(--color-gold) ,1) 0px 0px 0px 0.25rem;
+    border: none;
+}
+
+input[type=radio].orange {   
+    background-color: rgb( var(--color-orange) );
+}
+input[type=radio]:checked.orange, input[type=radio]:focus.orange  {
+    box-shadow: rgba( var(--color-orange) ,1) 0px 0px 0px 0.25rem;
+    border: none;
+}
+
+input[type=radio].lightcoral {
+    background-color: rgb( var(--color-lightcoral) );
+}
+input[type=radio]:checked.lightcoral, input[type=radio]:focus.lightcoral  {
+ 
+    box-shadow: rgba( var(--color-lightcoral), 1 ) 0px 0px 0px 0.25rem;
+    border: none;
+}
+
+input[type=radio].green {
+    background-color: rgb( var(--color-green) );
+}
+input[type=radio]:checked.green, input[type=radio]:focus.green  {
+ 
+    box-shadow: rgba( var(--color-green), 1 ) 0px 0px 0px 0.25rem;
+    border: none;
+}
+
+input[type=radio].purple {
+    background-color: rgb( var(--color-purple) );
+}
+input[type=radio]:checked.purple, input[type=radio]:focus.purple  {
+ 
+    box-shadow: rgba( var(--color-purple), 1 ) 0px 0px 0px 0.25rem;
+    border: none;
+}
+
+input[type=radio].gray {
+    background-color: rgb( var(--color-gray) );
+}
+input[type=radio]:checked.gray, input[type=radio]:focus.gray  {
+ 
+    box-shadow: rgba( var(--color-gray), 1 ) 0px 0px 0px 0.25rem;
+    border: none;
+}
+.colour-List {
+    ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+        display: flex;
+        align-content: center;
+        li {
+            padding: 2px;
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            span {
+                display: block;
+                height: 16px;
+                width: 16px;
+                padding: 8px;
+                border-radius: 30px;
+                border: solid 9px #f7f7f7;
+            }
+            &.selected {
+                span {
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}
+.ec.ec-day-grid {
+    &.ec-month-view{
+        .ec-event-body {
+            h4 {
+                font-size: 1rem;
+                font-weight: bold;
+            }
+            .ec-event-title {
+                white-space: wrap;
+            }
+        }
+    }
+    .ec-day {
+        padding-bottom: 31px;
+        cursor: cell;
+        .ec-day-head {
+            cursor: cell;
+        }
+        .ec-day-foot {
+            width: 100%;
+            height: 31px;
+            cursor: cell;
+        }
+    }
+}

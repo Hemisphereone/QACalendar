@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Vite</title>
+  </head>
+  <body>
+    <div class="container py-4 px-3 mx-auto">
+      <h1>Hello, Bootstrap and Vite!</h1>
+      <button class="btn btn-primary">Primary button</button>
+    </div>   
+
+    <div id="calendarContainer"></div>
+
+
+
+
+
+
+<!--<div hidden>
+    <div data-name="popover-form">
+        <div class="input-group">
+            <div class="row">
+                <div class="col"></div>
+            </div>            
+            <div class="row my-1">
+                <div class="col">
+                    <label for="eventName" class="form-label">Event Name</label>
+                    <input type="text" class="form-control" id="eventName" aria-describedby="Event Name" placeholder="Please enter event name">
+                </div>
+            </div>
+            <div class="row my-1">
+                <div class="col">
+                    <label for="startDate" class="form-label">From</label>
+                    <input type="date" class="form-control" id="startDate" aria-describedby="Event Date">
+                </div>
+                <div class="col">
+                    <label for="startTime" class="form-label">&nbsp;</label>
+                    <select name="startDate" id="startTime" class="form-select" aria-describedby="Event Start Time" >   
+                    </select>
+                </div>
+                <div class="col">
+                    <label for="EndTime" class="form-label">To</label>
+                    <select name="EndTime" id="endTime" class="form-select" aria-describedby="Event End Time" >
+                    </select>
+                </div>
+            </div>
+            <div class="row my-1">
+                <div class="col">
+                    <label for="EventColourOptions" class="form-label w-100">Event Colour</label>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input eventColourPicker cornflowerblue" type="radio" name="EventColourOptions" id="EventColour1" value="cornflowerblue" >
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input eventColourPicker gold" type="radio" name="EventColourOptions" id="EventColour1" value="rgb(246, 191, 38)">
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input eventColourPicker green" type="radio" name="EventColourOptions" id="EventColour2" value="mediumaquamarine">
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input eventColourPicker lightcoral" type="radio" name="EventColourOptions" id="EventColour3" value="lightcoral">
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input eventColourPicker orange" type="radio" name="EventColourOptions" id="EventColour4" value="orange">
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input eventColourPicker purple" type="radio" name="EventColourOptions" id="EventColour5" value="orchid">
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input eventColourPicker gray" type="radio" name="EventColourOptions" id="EventColour6" value="slategray">
+                      </div>
+                </div>
+            </div>		
+            <div class="row my-1">
+                <div class="col">
+                    <label for="EventDescription" class="form-label">Event Description</label>
+                    <textarea class="form-control"  name="EventDescription" id="EventDescription"></textarea>
+                </div>
+            </div>							
+            <div class="row my-1">
+                <div class="col">
+                    <button class="btn btn-danger" type="submit" id="formActionSubmit">
+                        Save event
+                    </button>
+                </div>
+            </div>
+       </div>  
+    </div>
+</div>-->
+    <!-- End of form -->
+
+
+
+    <!-- Popover HTML for when you want to see the event details-->
+
+    <!--<div data-name="popover-event-details" class="popOver-content">
+        <div class="row">
+            <div class="col flex">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" data-event-action="edit" href="#" disabled>edit</a></li>
+                    <li class="nav-item"><a class="nav-link" data-event-action="delete" href="#" disabled>delete</a></li>
+                    <li class="nav-item"><a href="#" type="button" data-event-action="close" class="btn-close" aria-label="Close"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h5 class="mb-0" data-name="event-title"></h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p data-name="event-date-time"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p data-name="event-description"></p>
+            </div>
+        </div>
+    </div>-->
+
+    <!-- End of Popover HTML-->
+    <!-- Start of toast container -->
+
+    
+    <div id="toast-container" class="toast-container position-fixed bottom-0 end-0 p-3">
+
+        <!-- Container for toast elements -->
+
+    </div>
+      
+      
+
+  <!-- End of toast container -->
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
